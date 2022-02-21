@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="/1.1-2.3/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#button").click(function () {
+          alert($("#name").val() + " " + $("#name1").val());
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form id="form">
+      <label for="name">Поле ввода 1</label><br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Введите текст"
+        required
+      /><br />
+      <label for="name1">Поле ввода 2</label><br />
+      <input
+        type="text"
+        id="name1"
+        name="name1"
+        placeholder="Введите текст"
+        required
+      /><br /><br />
+      <input type="submit" id="button" value="Отправить" />
+    </form>
+    <br />
+    <br />
+    <div id="result"></div>
+    <form>
+      <label for="list"> Выпадающий список</label>
+      <select id="list" name="list">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </form>
+    <br />
+    <form>
+      <label for="list"> Выпадающий список</label>
+      <select id="list1" name="list1">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </form>
+    <br />
+    <form>
+      <label for="list2"> Выпадающий список</label>
+      <select id="list2" name="list2">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </form>
+    <br />
+    <form>
+      <label for="list3"> Выпадающий список</label>
+      <select id="list3" name="list3">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </form>
+    <br />
+    <form>
+      <label for="list4"> Выпадающий список</label>
+      <select id="list4" name="list4">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </form>
+  </body>
+</html>

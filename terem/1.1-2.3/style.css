@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 20px;
+  grid-column-start: auto;
+}
+.header {
+  grid-area: header;
+  display: block;
+}
+.block1 {
+  grid-area: mainLeft;
+  background-color: #999c99 !important;
+  block-size: 25%;
+}
+.block2 {
+  grid-area: mainMiddle;
+  border-style: dashed !important;
+  background-color: #797b72 !important;
+  block-size: 25%;
+}
+.block3 {
+  grid-area: mainRight;
+  background-color: #666463 !important;
+  block-size: 25%;
+}
+.footerLeft {
+  grid-area: footerLeft;
+  width: 30vw;
+}
+.footerRight {
+  grid-area: footerRight;
+  width: 60vw;
+}
+.grid-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-areas:
+    "header header header header header header"
+    "mainLeft mainLeft mainMiddle mainMiddle mainRight mainRight"
+    "footerLeft footerLeft footerRight footerRight footerRight footerRight";
+  gap: 10px;
+  background-color: #b5b4ac;
+  padding: 10px;
+  grid-auto-columns: 1fr;
+  width: inherit;
+  margin: 30px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px 0;
+  border: 1px solid rgb(0, 0, 0);
+  width: 100%;
+}
+.btn-outline-primary {
+  background-color: yellow;
+  cursor: pointer;
+}
+.btn-outline-secondary {
+  background-color: lightgreen;
+  color: rgb(215, 86, 146);
+  cursor: pointer;
+}
+form {
+  display: inline;
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .grid-container > div {
+    width: 100%;
+  }
+}
